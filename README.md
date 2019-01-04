@@ -32,7 +32,7 @@ The following table lists the corresponding version relationships between Origin
 The above 3 steps have been grouped together as one script for you. To bring your cluster up, just use the following command:
 
 ```bash
-$ vagrant install plugin vagrant-hostmanager
+$ vagrant plugin install vagrant-hostmanager
 $ ./oc-up.sh
 ```
 
