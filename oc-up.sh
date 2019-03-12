@@ -5,6 +5,8 @@
 PRG="$0"
 RETCODE=0
 
+mkdir -p assets
+
 while [ -h "$PRG" ]; do
     ls=`ls -ld "$PRG"`
     link=`expr "$ls" : '.*-> \(.*\)$'`
@@ -22,7 +24,6 @@ readonly openshift_release=`cat Vagrantfile | grep '^OPENSHIFT_RELEASE' | awk -F
 
 . "$PRGDIR/common.sh"
 
-mkdir assets
 
 vagrant up
 
