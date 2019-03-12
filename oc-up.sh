@@ -22,6 +22,8 @@ readonly openshift_release=`cat Vagrantfile | grep '^OPENSHIFT_RELEASE' | awk -F
 
 . "$PRGDIR/common.sh"
 
+mkdir assets
+
 vagrant up
 
 vagrant provision --provision-with master-key,node01-key,node02-key
